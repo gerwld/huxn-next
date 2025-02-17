@@ -1,4 +1,4 @@
-import React, { type ReactNode } from 'react'
+import React, { FC, type ReactNode } from 'react'
 
 interface IUser {
     name: string;
@@ -7,7 +7,7 @@ interface IUser {
     children?: ReactNode
 }
 
-const User = ({ name, age, isStudent, children }: IUser) => {
+const User: FC<IUser> = ({ name, age, isStudent, children }) => {
     return (
         <main>
             <h2>{name}</h2>
