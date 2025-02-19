@@ -1,7 +1,8 @@
-import AdminInfo from "@/components/AdminInfo"
-import Counter from "@/components/Counter"
-import User from "@/components/User"
-import UserInfo from "@/components/UserInfo"
+import AdminInfo from "@/components/AdminInfo";
+import Counter from "@/components/Counter";
+import Form from "@/components/Form";
+import User from "@/components/User";
+import UserInfo from "@/components/UserInfo";
 
 const page = () => {
   return (
@@ -14,9 +15,10 @@ const page = () => {
       {/* <UserInfo username="qwdqwd" email="bb@email.com" age={23} location={["esdve", "Canada"]} /> */}
       {/* <AdminInfo username="fqwd" email="sb@email.com" age={40} location={["esdve", "Canada"]} admin={true} /> */}
 
-      <Counter/>
+      {/* <Counter/> */}
+      <Form />
     </section>
-  )
-}
+  );
+};
 
-export default page
+export default page;
