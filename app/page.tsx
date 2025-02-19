@@ -1,5 +1,7 @@
+"use client"
 import AdminInfo from "@/components/AdminInfo";
 import Counter from "@/components/Counter";
+import ElementWrapper from "@/components/ElementWrapper";
 import Form from "@/components/Form";
 import User from "@/components/User";
 import UserInfo from "@/components/UserInfo";
@@ -16,7 +18,14 @@ const page = () => {
       {/* <AdminInfo username="fqwd" email="sb@email.com" age={40} location={["esdve", "Canada"]} admin={true} /> */}
 
       {/* <Counter/> */}
-      <Form />
+      {/* <Form /> */}
+      <ElementWrapper elementType="div" className="box">
+        <p>This is a div element with a class name of box</p>
+      </ElementWrapper>
+        
+      <ElementWrapper elementType="button" className="button" onClick={() => alert("button click")}>
+      button
+      </ElementWrapper>
     </section>
   );
 };
