@@ -1,5 +1,6 @@
 "use client"
 import AdminInfo from "@/components/AdminInfo";
+import Button from "@/components/Button";
 import Counter from "@/components/Counter";
 import ElementWrapper from "@/components/ElementWrapper";
 import Form from "@/components/Form";
@@ -26,6 +27,9 @@ const page = () => {
       <ElementWrapper elementType="button" className="button" onClick={() => alert("button click")}>
       button
       </ElementWrapper>
+
+      <Button label="something" type="primary"/>
+      <Button label="something" type="secondary"/>
     </section>
   );
 };

@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useRef, useState } from "react";
+import Button from "./Button";
 
 type FormData = {
   name: string;
@@ -50,6 +51,7 @@ const Form = () => {
         <div>{submittedData.email}</div>
         <div>{submittedData.password}</div>
       </section>
+
     </div>
   );
 };
